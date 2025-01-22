@@ -1,27 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React, { useState } from 'react';
 
-function Lien(props) {
-    return <li><a href={props.champ.lien}>{props.champ.name}</a></li>;
+function Lien({value}) {
+    return <li><a href={value.lien}>{value.name}</a></li>;
 }
 
 
-function NavBar(props) {
-    const liens = props.Champs_navbar; //  voir si je peux l'appeller depuis header 
-    console.log(liens);
-    /*const liens = [
-        {name:'email', lien:'#apropos' },
-        {name:'test', lien:'text' },
-        {name:'youpi', lien:'text' }];*/
+function NavBar({champ_navbar}) {
+    const [liens, setLiens] = useState(champ_navbar);
     return (
       <>
         <ul>
-          {liens.map((lien) => <Lien champ={lien} />)}
+            {liens.map((value) => ( 
+              <Lien value={value} /> 
+            ))}
         </ul>
       </>
     );
   }
 
 export default NavBar;
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<NavBar />);
+
