@@ -3,10 +3,10 @@ function Footer(props) {
       <div class="footer">
     
         <h1 className="footer-title">
-          {props.titre_header}
+          {props.titre}
         </h1>
         <p className="footer-message">
-            {props.message_header}
+            {props.message}
         </p>
       </div>
     );

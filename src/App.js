@@ -1,10 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import profil from './audrey.jpg';
-import ImgMail from './mail.png';
-import ImgMap from './map.png';
-import ImgNumero from './numero.png';
 import './App.css';
+import logo from './logo.svg';
 import Header from './files/header';
 import Footer from './files/footer';
 import Image_droite from './files/Image_droite';
@@ -18,7 +14,12 @@ function App() {
 
   return (
   <>
-    <Header />
+    <Header titre_header={titre_header} message_header={message_header} />
+    <Image_droite titre="Test" message="message_header" logo={logo} />
+    <Image_gauche titre={titre_header} message={message_header} logo={logo}  />
+    <Image_droite titre={titre_header} message={message_header} logo={logo} />
+
+    <Footer titre={titre} message={message} logo={logo} />    
   </>
    
   );
