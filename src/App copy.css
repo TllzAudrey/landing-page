@@ -1,0 +1,96 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 5px;
+  }
+  .flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container2 > div {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 5px;
+  }
+  
+  
+  
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-height: 500px;
+  }
+  
+  
+  
+  .profil {
+    height: 50%;
+    border-radius:50%
+  }
+  .header > div {
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+  }
+  
+  
+  
+  .icon{
+    width: 25%;
+    height: 25%;
+  }
+  .lien{
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: start;
+      align-items: center;
+  }
+  
+  #liens{
+    text-align: center;
+    margin-left:5%;
+  }
+  
+  
+  
+  
+  
+  
+  .projets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .projets > div {
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: 5px;
+  }
+  
+  
+  
+  
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+  
+  

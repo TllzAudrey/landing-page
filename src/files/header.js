@@ -5,37 +5,33 @@ import ImgMail from '../mail.png';
 import ImgMap from '../map.png';
 import ImgNumero from '../numero.png';
 
-export default function Header({titre_header,  message_header, mail, map, num  }) {
-  const [champ_navbar, setChampNavbar] = useState([
-    { name: 'email', lien: 'apropos' },
-    { name: 'test', lien: 'text' },
-    { name: 'youpi', lien: 'youpi' },
-  ])
 
+export default function Header({  }) {
+  const [champ_navbar, setChampNavbar] = useState([
+    { name: 'Compétences', lien: '#skills' },
+    { name: 'projets', lien: '#projects' },
+    { name: 'Mes premiers pas', lien: '#firstprojects' },
+    { name: 'test', lien: '#test' },
+  ])
+  const [mail, setMail] = useState('telliez.a18@gmail.com');
+  const [map, setMap] = useState('Saint-Doulchard');
+  const [num, setNum] = useState('06 28 18 79 92');
   
   return (
     <header>
         <NavBar champ_navbar = {champ_navbar} />
         <div class="header">
-          <div >
-            <img src={profil} className="profil" alt="photo-profil" />
-          </div>
-          <div >
-            <h1 className="header-title"> {titre_header} </h1>
-            <p className="header-message"> {message_header} </p>
-            <div id="liens">
-              <div class="lien">
-                <img src={ImgMail} className="icon" alt="icon" />
-                <p>{mail}</p>
-              </div>
-              <div class="lien">
-                <img src={ImgMap} className="icon" alt="icon" />
-                <p>{map}</p>
-              </div>
-              <div class="lien">
-                <img src={ImgNumero} className="icon" alt="icon" />
-                <p>{num}</p>
-              </div>
+          <img src={profil} class="profil" alt="photo-profil" />
+
+          <div id="liens">
+            <div class="lien">
+              <img src={ImgMail} class="icon" alt="icon" /><p>{mail}</p>
+            </div>
+            <div class="lien">
+              <img src={ImgMap} class="icon" alt="icon" /><p>{map}</p>
+            </div>
+            <div class="lien">
+              <img src={ImgNumero} class="icon" alt="icon" /><p>{num}</p>
             </div>
           </div>
       </div>

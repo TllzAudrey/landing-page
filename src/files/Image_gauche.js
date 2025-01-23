@@ -1,7 +1,7 @@
 import '../App.css';
 function image_gauche(props) {
     return (
-        <div class="flex-container2">
+        <div class="flex-container" id={props.lien}>
             <div> <img src={props.logo} className="image-gauche" alt="image" /></div>
             <div>
                 <h1 className="title-gauche">{props.titre}</h1>

@@ -1,38 +1,11 @@
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
+/*
+  #c2067b
+  #79747b
+  #820453
+  #545454
+*/
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  width: 50%;
-  margin: 5px;
-}
-.flex-container2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.flex-container2 > div {
-  background-color: #f1f1f1;
-  width: 50%;
-  margin: 5px;
-}
-
-div > h1,h2,p{
-  margin: 5%
-}
-
-
-.header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  max-height: 400px;
-}
-
+/* navbar */
 .navbar {
   display: block;
   background-color: #f1f1f1;
@@ -66,37 +39,80 @@ li a:hover {
   background-color: #111;
 }
 
-div > .profil {
-  height: 100%;
-}
-
+/* header */
 
 .header {
+  text-align: center;
+  max-height: 500px;
+  padding: 20px;
+  margin-bottom: 60px;
+  background-color: #820453;
+}
+
+.profil{
+  border-radius:50%;
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+.lien{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: start;
+  align-items: center;
+}
+.lien > p{
+  color: white;
+}
+.icon{
+  max-height: 40px;
+  margin-left: 30px;
+}
+
+/* containers */
+#containers{
+  margin: 5%;
+}
+#container >h2 {
+  color: #c2067b;
+  text-align: center;
+}
+
+#containers {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 
-.header > div {
-  background-color: #f1f1f1;
-  width: 50%;
+#containers > div{
+  background-color: #79747b;
+  color: white;
+  flex: 50%;
+  padding: 15px;
   margin: 5px;
 }
 
-.icon{
-  width: 25%;
-  height: 25%;
-}
-.lien{
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: start;
-    align-items: center;
+/* container image + text */
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-#liens{
-  text-align: center;
-  margin-left:5%;
+.flex-container > div {
+  flex: 50%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.flex-container > div >img {
+  justify-content:flex-end;
+}
+
+/* Footer */
+
+.footer{
+  padding-left: 60px;
+  padding-right: 60px;
 }
