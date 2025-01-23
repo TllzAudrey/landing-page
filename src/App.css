@@ -4,11 +4,15 @@
   #820453
   #545454
 */
+/**/
+
+section{
+  margin: 20px 40px 20px 40px;
+}
 
 /* navbar */
 .navbar {
   display: block;
-  background-color: #f1f1f1;
   width: 100%;
   margin: 10px;
   text-align: center;
@@ -45,7 +49,7 @@ li a:hover {
   text-align: center;
   max-height: 500px;
   padding: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   background-color: #820453;
 }
 
@@ -70,10 +74,94 @@ li a:hover {
   margin-left: 30px;
 }
 
-/* containers */
-#containers{
-  margin: 5%;
+#description > p {
+  color: white;
+  text-align: left;
 }
+
+#description > h2{
+  color: white;
+  text-align: center;
+}
+
+/* a propos*/
+
+#apropos{
+  background-color: #79747b;
+  color: white;
+  padding : 5%;
+}
+
+/* Progression Bar */
+
+#progression_cont {
+  margin:0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.image-cv{
+  max-width: 60%;
+  display: block;
+  margin-left: 10%;
+}
+#progression_cont > div {
+  flex:50;
+  padding: 15px;
+  margin: 5px;
+}
+
+#progression_bars > label{
+  line-height: 20px;
+  margin-right: 20px;
+}
+
+#progression_bars > progress{
+  display: block;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 500px;
+  height: 12px;
+  margin-bottom: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color:#c2067b;
+    border-radius: 10px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+#progbar > h1{
+  color: #c2067b;
+}
+
+#progbar > h2{
+  color: #545454;
+}
+
+#cv{
+  text-align: center;
+}
+
+.Documents-btn{
+  background-color: #820453;
+  color: white;
+  padding: 10px;
+  margin:0;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border-color: #820453;
+}
+
+/* containers */
+
 #container >h2 {
   color: #c2067b;
   text-align: center;
@@ -101,18 +189,31 @@ li a:hover {
   flex-wrap: nowrap;
 }
 
+#colum-image{
+  text-align: center;
+}
+
 .flex-container > div {
   flex: 50%;
   padding-left: 60px;
   padding-right: 60px;
 }
+
 .flex-container > div >img {
   justify-content:flex-end;
+}
+
+.image-column{
+  max-width: 100%;
+
 }
 
 /* Footer */
 
 .footer{
-  padding-left: 60px;
-  padding-right: 60px;
+  background-color: #820453;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
+

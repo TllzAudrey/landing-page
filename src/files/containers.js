@@ -3,15 +3,12 @@ import React, { useState } from 'react';
 function Container({value}) {
     return (
         <>
-            <div><h3>{value.titre}</h3><p>{value.description}</p></div>
+            <div><h3>{value.titre}</h3><h4>{value.soustitre}</h4><p>{value.description}</p></div>
        </>
     );
 }
 
-
-
-
-function Containers({champ, titre, lien}) {
+function Containers({champ, titre, soustitre, lien}) {
     const [containers, setContainers] = useState(champ);
     return (
       <>

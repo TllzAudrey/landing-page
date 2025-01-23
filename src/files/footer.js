@@ -6,7 +6,7 @@ function Footer(props) {
           {props.titre}
         </h1>
         <p className="footer-message">
-            {props.message}
+          Merci d'avoir visité mon portfolio ! 🌟 | © 2025 {props.nom} | Let's create something amazing together!
         </p>
       </div>
     );
