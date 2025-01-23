@@ -17,23 +17,25 @@ export default function Header({titre_header,  message_header, mail, map, num  }
     <header>
         <NavBar champ_navbar = {champ_navbar} />
         <div class="header">
-          <div class="header-left">
+          <div >
             <img src={profil} className="profil" alt="photo-profil" />
           </div>
-          <div class="header-right">
+          <div >
             <h1 className="header-title"> {titre_header} </h1>
             <p className="header-message"> {message_header} </p>
-            <div class="liens">
-              <img src={ImgMail} className="icon" alt="icon" />
-              <p>{mail}</p>
-            </div>
-            <div class="liens">
-              <img src={ImgMap} className="icon" alt="icon" />
-              <p>{map}</p>
-            </div>
-            <div class="liens">
-              <img src={ImgNumero} className="icon" alt="icon" />
-              <p>{num}</p>
+            <div id="liens">
+              <div class="lien">
+                <img src={ImgMail} className="icon" alt="icon" />
+                <p>{mail}</p>
+              </div>
+              <div class="lien">
+                <img src={ImgMap} className="icon" alt="icon" />
+                <p>{map}</p>
+              </div>
+              <div class="lien">
+                <img src={ImgNumero} className="icon" alt="icon" />
+                <p>{num}</p>
+              </div>
             </div>
           </div>
       </div>
