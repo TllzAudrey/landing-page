@@ -40,7 +40,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #444;
 }
 
 /* header */
@@ -183,6 +183,12 @@ progress[value]::-webkit-progress-value {
 
 /* container image + text */
 
+.title-gauche{
+  margin-top: 30px 0 30px 0;
+  text-align: center;
+  color: #c2067b;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -206,6 +212,12 @@ progress[value]::-webkit-progress-value {
 .image-column{
   max-width: 100%;
 
+}
+
+.title-droite{
+  margin-top: 30px 0 30px 0;
+  text-align: center;
+  color: #c2067b;
 }
 
 /* Footer */

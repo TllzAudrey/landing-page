@@ -32,8 +32,8 @@ function App() {
     <ProgressionBars titre="Technologies que j'étudie" lien="skills"/>
     <Container champ={champ_projet} titre="Mes projets récents" lien="projects"/>
 
-    <Image_gauche titre="Test" soustitre="sous titre" message="message_header" image={projet} lien="test" />
-    <Image_droite titre="Test" soustitre="sous titre" message="message_header" image={lecture} lien="test1"/>
+    <Image_gauche titre="Mes passes temps" soustitre="sous titre" message="message_header" image={projet} lien="test" />
+    <Image_droite titre="" soustitre="sous titre" message="message_header" image={lecture} lien="test1"/>
 
 
     <Footer nom="Audrey" />    
