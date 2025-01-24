@@ -43,8 +43,10 @@ function App() {
     <Timeline champ={expperience} titre="Mon experiences" lien="mes-experiences" />
     
 
-    <Image_gauche titre="Mes passes temps" soustitre="sous titre" message="message_header" image={projet} lien="passe-temp" />
-    <Image_droite titre="" soustitre="sous titre" message="message_header" image={lecture} lien=""/>
+    <Image_droite titre="Mes passes temps" soustitre="Mes passions" 
+    message="J’adore lire des romans, faire de la photographie et voyager.Lire me permet de m’évader dans des histoires captivantes et d’explorer d’autres mondes. C’est une façon de rêver et d’apprendre en même temps.Avec la photographie, j’aime capturer des instants uniques, comme un paysage ou un sourire. Ça me pousse à voir la beauté dans les détails et à garder des souvenirs précieux.Enfin, voyager me permet de découvrir de nouveaux endroits, de rencontrer des gens différents et de vivre des expériences inoubliables. Chaque voyage me fait grandir.Ces passions enrichissent ma vie et me rappellent la beauté du monde." 
+    image={lecture} lien="passe-temp" />
+    <Image_gauche titre="" soustitre="sous titre" message="message_header" image={projet} lien=""/>
 
     <Timeline champ={formation} titre="Mes formations" lien="mes-formations" />
 

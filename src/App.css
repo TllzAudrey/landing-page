@@ -5,7 +5,9 @@
   #545454
 */
 /**/
-
+p{
+  text-align: justify;
+}
 section{
   margin: 20px 40px 20px 40px;
 }
@@ -171,6 +173,9 @@ progress[value]::-webkit-progress-value {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width:900px;
+  margin:auto;
+  position:relative;
 }
 
 #containers > div{
@@ -193,10 +198,15 @@ progress[value]::-webkit-progress-value {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width:900px;
+  margin:auto;
+  position:relative;
+
 }
 
 #colum-image{
   text-align: center;
+  margin-top: 10px;
 }
 
 .flex-container > div {
@@ -290,8 +300,13 @@ ul.tl li .timestamp{
 
 .footer{
   background-color: #820453;
-  color: white;
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  width:100%;
+  margin:auto;
+  position:relative;
 }
 
+.footer > p{
+  text-align: center;
+  color: white;
+}
