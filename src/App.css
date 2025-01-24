@@ -17,7 +17,7 @@ section{
   margin: 10px;
   text-align: center;
 }
-ul {
+#navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -25,11 +25,11 @@ ul {
   background-color: #333;
 }
 
-li {
+#navbar > li {
   float: left;
 }
 
-li a {
+#navbar >  li a {
   display: block;
   color: white;
   text-align: center;
@@ -39,7 +39,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+#navbar > li a:hover {
   background-color: #444;
 }
 
@@ -84,7 +84,7 @@ li a:hover {
   text-align: center;
 }
 
-/* a propos*/
+/* a propos css*/
 
 #apropos{
   background-color: #79747b;
@@ -92,7 +92,7 @@ li a:hover {
   padding : 5%;
 }
 
-/* Progression Bar */
+/* Progression Bar css */
 
 #progression_cont {
   margin:0;
@@ -160,7 +160,7 @@ progress[value]::-webkit-progress-value {
   border-color: #820453;
 }
 
-/* containers */
+/* containers + text css*/
 
 #container >h2 {
   color: #c2067b;
@@ -181,7 +181,7 @@ progress[value]::-webkit-progress-value {
   margin: 5px;
 }
 
-/* container image + text */
+/* container image + text css*/
 
 .title-gauche{
   margin-top: 30px 0 30px 0;
@@ -220,7 +220,73 @@ progress[value]::-webkit-progress-value {
   color: #c2067b;
 }
 
-/* Footer */
+/* Timeline css*/
+#container-timeline > h2{
+  color: #c2067b;
+  text-align: center;
+
+}
+
+.history-tl-container{
+  font-family: "Roboto",sans-serif;
+  width:70%;
+  text-align: center;
+  margin:auto;
+  display:block;
+  position:relative;
+}
+.history-tl-container ul.tl{
+  margin:20px 0;
+  padding:0;
+  display:inline-block;
+
+}
+.history-tl-container ul.tl li{
+  list-style: none;
+  margin:auto;
+  margin-left:200px;
+  text-align: left;
+  min-height:50px;
+  border-left:1px dashed #c2067b;
+  padding:0 0 50px 30px;
+  position:relative;
+}
+.history-tl-container ul.tl li:last-child{ border-left:0;}
+.history-tl-container ul.tl li::before{
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgba(255, 255, 255, 0.74);
+  border-radius: 500%;
+  background: #c2067b;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.history-tl-container ul.tl li:hover::before{
+  border-color:  #c2067b;
+  transition: all 1000ms ease-in-out;
+}
+
+ul.tl li .item-title{
+  color: #c2067b;
+}
+ul.tl li .item-detail{
+  color:#545454;
+  font-size:12px;
+}
+ul.tl li .timestamp{
+  color: #545454;
+  position: absolute;
+  width:100px;
+  left: -40%;
+  text-align: right;
+  font-size: 12px;
+}
+
+/* Footer css*/
 
 .footer{
   background-color: #820453;

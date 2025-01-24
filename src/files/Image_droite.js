@@ -1,7 +1,7 @@
 import '../App.css';
 function image_droite(props) {
     return (
-        <section>
+        <section id={props.lien}>
             <h2 className="title-droite">{props.titre}</h2>
             <div class="flex-container">
                 <div >
