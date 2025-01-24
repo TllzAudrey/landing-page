@@ -5,11 +5,14 @@
   #545454
 */
 /**/
+body{
+  font-family: "Roboto",sans-serif;
+}
 p{
   text-align: justify;
 }
 section{
-  margin: 20px 40px 20px 40px;
+  padding: 10px 0 10px 0;
 }
 
 /* navbar */
@@ -58,6 +61,7 @@ section{
   text-align: center;
   width:100%;
   margin:auto;
+  padding: 20px 0 20px 0;
   position:relative;
   margin-bottom: 20px;
   background-color: #820453;
@@ -109,6 +113,9 @@ section{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  width:80%;
+  margin:auto;
+  position:relative;
 }
 .image-cv{
   max-width: 60%;
@@ -181,7 +188,7 @@ progress[value]::-webkit-progress-value {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width:900px;
+  width:80%;
   margin:auto;
   position:relative;
 }
@@ -206,15 +213,16 @@ progress[value]::-webkit-progress-value {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width:900px;
+  width:70%;
   margin:auto;
   position:relative;
-
+  font-size: 115%;
 }
 
 #colum-image{
   text-align: center;
   margin-top: 10px;
+  width: 100%;
 }
 
 .flex-container > div {
@@ -239,6 +247,7 @@ progress[value]::-webkit-progress-value {
 }
 
 /* Timeline css*/
+
 #container-timeline > h2{
   color: #c2067b;
   text-align: center;
@@ -246,7 +255,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .history-tl-container{
-  font-family: "Roboto",sans-serif;
+
   width:70%;
   text-align: center;
   margin:auto;
