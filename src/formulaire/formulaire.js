@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 function Inputs({champs}) {
-        let list = [];
-        for(var i in champs){
-            let champ = champs[i];
-            if(champ.type=== 'btn' || champ.type=== 'button'|| champ.type=== 'submit'|| champ.type=== 'reset'){
-                list.push(CustomButton(champ));
-            }if(champ.type=== 'select'){
-                list.push(CustomSelect(champ));
-            }else{
-                list.push(CustomInput(champ));
-            }
+    const [list, setList] = useState([]);
+    for(var i in champs){
+        let champ = champs[i];
+        if(champ.type=== 'btn' || champ.type=== 'button'|| champ.type=== 'submit'|| champ.type=== 'reset'){
+            list.push(CustomButton(champ));
+        }if(champ.type=== 'select'){
+            list.push(CustomSelect(champ));
+        }else{
+            list.push(CustomInput(champ));
         }
-        return list;
+    }
+    return list;
     }
 
 function CustomInput (champ) {
@@ -73,9 +73,7 @@ function FormMultiple({champ, action, method, titre,lien}) {
 
             <h2>{titre}</h2>
             <form action={action} mathod ={method}>
-                {champs.map((value) => ( 
-                    <Inputs value={value} /> 
-                ))}
+                {list}
                 <button type='submit' >submit</button>
             </form>
         </section>
