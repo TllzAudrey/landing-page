@@ -1,10 +1,12 @@
 import Formulaire from './formulaire/formulaire';
 
-function App () {
+
+function Contact_form () {
     let method = 'POST';
     let lien_contact = 'contact';
     let action= 'test.php';
-    let Champs= [{name:'email', type:'text' , placeholder:'Enter User Name'},
+    let Champs= [
+    {name:'email', type:'text' , placeholder:'Enter User Name'},
     {name:'text', type:'text' , placeholder:'Enter test2'},
     {type:'btn' , placeholder:'Voici un button '},
     {name:'text', type:'date' , placeholder:'Enter test2'},
@@ -15,9 +17,8 @@ function App () {
     return (
 
         <>
-          <Formulaire champ={Champs} action ={action} method={method} lien={lien_contact}/>
+            <Formulaire champs={Champs} action ={action} method={method} lien={lien_contact}/>
         </>
 
     )
 }
-export default App;
