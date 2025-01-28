@@ -7,11 +7,19 @@ import ImgNumero from '../header/numero.png';
 
 
 export default function Header({description  }) {
-  const [champ_navbar, setChampNavbar] = useState([
+  /*const [champ_navbar, setChampNavbar] = useState([
     { name: 'A propos', lien: '#a-propos' },
     { name: 'Compétences', lien: '#skills' },
     { name: 'projets', lien: '#projects' },
     { name: 'Mes expériences', lien: '#mes-experiences' },
+    { name: "Mes passe temps", lien:"#passe-temp"},
+    { name: 'Mes formations', lien: '#mes-formations' },    
+    { name: 'Contact', lien: '#contact' },    
+  ]) */
+  const [champ_navbar, setChampNavbar] = useState([
+    { name: 'Compétences', lien: '#skills' },
+    { name: 'Mes expériences', lien: '#mes-experiences' },
+    { name: 'projets', lien: '#projects' },
     { name: "Mes passe temps", lien:"#passe-temp"},
     { name: 'Mes formations', lien: '#mes-formations' },    
     { name: 'Contact', lien: '#contact' },    
