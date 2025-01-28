@@ -1,24 +1,36 @@
-import Formulaire from './formulaire/formulaire';
+import Formulaire from './formulaire';
 
 
 function Contact_form () {
-    let method = 'POST';
-    let lien_contact = 'contact';
-    let action= 'test.php';
-    let Champs= [
-    {name:'email', type:'text' , placeholder:'Enter User Name'},
-    {name:'text', type:'text' , placeholder:'Enter test2'},
-    {type:'btn' , placeholder:'Voici un button '},
-    {name:'text', type:'date' , placeholder:'Enter test2'},
-    {type:'submit' , placeholder:'submit'},
-    {name:'text', type:'select' , placeholder:'test select', choix: [{name: "test"},]},
-
+    
+    const handleFormSubmit = (data) => {
+        console.log('Form Data Submitted:', data);
+    };
+    
+    const formFields = [
+        { type: 'text', name: 'name', label: 'Nom', required: true },
+        { type: 'text', name: 'email', label: 'Email', required: true },
+        { type: 'button', name: 'name', label: 'Nom', required: true },
+        { type: 'text', name: 'email', label: 'Email', required: true },
+        {
+        type: 'select',
+        name: 'subject',
+        label: 'Objet',
+        required: true,
+        options: [
+            { value: 'general', label: 'Général' },
+            { value: 'support', label: 'Support' },
+            { value: 'sales', label: 'Ventes' },
+        ],
+        },
+        { type: 'button', label: 'Envoyer' },
     ];
     return (
 
         <>
-            <Formulaire champs={Champs} action ={action} method={method} lien={lien_contact}/>
+            <Formulaire fields={formFields} onSubmit={handleFormSubmit}/>
         </>
 
     )
 }
+export default Contact_form;

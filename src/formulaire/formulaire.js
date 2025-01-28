@@ -1,84 +1,51 @@
-import React, { useState } from 'react';
-function Inputs({champs}) {
-    const [list, setList] = useState([]);
-    for(var i in champs){
-        let champ = champs[i];
-        if(champ.type=== 'btn' || champ.type=== 'button'|| champ.type=== 'submit'|| champ.type=== 'reset'){
-            list.push(CustomButton(champ));
-        }if(champ.type=== 'select'){
-            list.push(CustomSelect(champ));
-        }else{
-            list.push(CustomInput(champ));
+// ReusableForm.js
+import React from 'react';
+
+const ReusableForm = ({ fields, onSubmit }) => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+    onSubmit(data);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      {fields.map((field, index) => {
+        switch (field.type) {
+          case 'text':
+            return (
+              <div key={index}>
+                <label htmlFor={field.name}>{field.label}</label>
+                <input type="text" name={field.name} id={field.name} required={field.required} />
+              </div>
+            );
+          case 'button':
+            return (
+              <div key={index}>
+                <button type="submit">{field.label}</button>
+              </div>
+            );
+          case 'select':
+            return (
+              <div key={index}>
+                <label htmlFor={field.name}>{field.label}</label>
+                <select name={field.name} id={field.name} required={field.required}>
+                  {field.options.map((option, i) => (
+                    <option key={i} value={option.value}>{option.label}</option>
+                  ))}
+                </select>
+              </div>
+            );
+          default:
+            return null;
         }
-    }
-    return list;
-    }
+      })}
+    </form>
+  );
+};
 
-function CustomInput (champ) {
-    return (
-        <> <label >{champ.placeholder}
-            <input
-                    name={champ.name}
-                    type={champ.type}
-                    placeholder={champ.placeholder}
-                    value={champ.value}
-                    onChange={champ.onChange}
-                    key={champ.name}
-            /></label>
-            <div></div>
-        </>
-    )
-}
-
-function CustomButton (button) {
-    return (
-        <> <button type={button.type}>{button.placeholder}</button>
-            <div></div>
-        </>
-    )
-}
-
-function CustomOption(option) {
-    return (
-        <> 
-                <option value={option.name}>{option.name}</option>
-        </>
-    )
-}
-
-function CustomSelect (select) {
-    let listItems = [];
-    for(var i in select.choix){
-        let value = select.choix[i];
-        listItems.push(CustomOption(value));
-
-    }
-    return (
-        <> 
-            <label for={select.name}>{select.placeholder}</label>
-
-            <select name={select.name} id={select.name}>
-                {listItems}
-
-            </select>
-
-        </>
-    )
-}
-
-function FormMultiple({champ, action, method, titre,lien}) {
-    const [champs, setChamps] = useState(champ);
-    return (
-        <section id={lien}>
-
-            <h2>{titre}</h2>
-            <form action={action} mathod ={method}>
-                {list}
-                <button type='submit' >submit</button>
-            </form>
-        </section>
-
-    )
-}
-
-export default FormMultiple;
+export default ReusableForm;
