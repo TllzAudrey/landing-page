@@ -362,15 +362,40 @@ ul.tl li .timestamp{
 
 /*Responsive */
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
+  .flex-container, #containers, #progression_cont {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #colum-image{
+    max-width: 800px;
+    margin:auto;
+    position:relative;
+  }
+
+  #progression_cont > #progbar, #progression_cont > #cv{
+    margin:auto;
+    position:relative;
+  }
+}
+
+@media (max-width: 900px) {
   .flex-container, #containers , #progression_cont, .lien{
     flex-direction: column;
     width: 90%;
   }
 
+  #progression_cont > #progbar, #progression_cont > #cv{
+    margin:auto;
+    position:relative;
+    width: 95%;
+  }
+
   #progression_bars > progress{
     width: 100%;
   }
+
   .history-tl-container ul.tl li{
     margin-left:15%;
   }

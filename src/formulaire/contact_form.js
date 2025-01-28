@@ -10,7 +10,7 @@ function Contact_form ({lien, titre_formulaire}) {
     const method = "POST";
     const formFields = [
         { type: 'text', name: 'name', label: 'Nom', required: true },
-        { type: 'text', name: 'email', label: 'Email', required: true },
+        { type: 'text', name: 'lastname', label: 'Prenom', required: true },
         { type: 'text', name: 'email', label: 'Email', required: true },
         {
         type: 'select',
