@@ -48,7 +48,7 @@ function App() {
      image={projet} lien=""/>
 
     <Timeline champ={formation} titre="Mes formations" lien="mes-formations" />
-    <Contact/>
+    <Contact lien="contact" titre_formulaire="Me contacter"/>
     <Footer nom="Audrey" />    
   </>
    

@@ -14,6 +14,7 @@ export default function Header({description  }) {
     { name: 'Mes expériences', lien: '#mes-experiences' },
     { name: "Mes passe temps", lien:"#passe-temp"},
     { name: 'Mes formations', lien: '#mes-formations' },    
+    { name: 'Contact', lien: '#contact' },    
   ])
   const [mail, setMail] = useState('telliez.a18@gmail.com');
   const [map, setMap] = useState('Saint-Doulchard');

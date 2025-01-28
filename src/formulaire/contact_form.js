@@ -1,16 +1,16 @@
 import Formulaire from './formulaire';
 
 
-function Contact_form () {
+function Contact_form ({lien, titre_formulaire}) {
     
     const handleFormSubmit = (data) => {
         console.log('Form Data Submitted:', data);
     };
-    
+    const action = "" ;
+    const method = "POST";
     const formFields = [
         { type: 'text', name: 'name', label: 'Nom', required: true },
         { type: 'text', name: 'email', label: 'Email', required: true },
-        { type: 'button', name: 'name', label: 'Nom', required: true },
         { type: 'text', name: 'email', label: 'Email', required: true },
         {
         type: 'select',
@@ -27,8 +27,8 @@ function Contact_form () {
     ];
     return (
 
-        <>
-            <Formulaire fields={formFields} onSubmit={handleFormSubmit}/>
+        < >
+            <Formulaire fields={formFields} onSubmit={handleFormSubmit} lien={lien} titre_formulaire={titre_formulaire} action={action} method={method}/>
         </>
 
     )
