@@ -18,8 +18,8 @@ function Timeline({champ, titre, lien}) {
     const [timeline, setTimeline] = useState(champ);
     return (
       <>
-        <section id={lien}>
-          <div id="container-timeline">
+        <section id="container-timeline">
+          <div id={lien}>
             <h2>{titre}</h2>
             <div class="history-tl-container">
                 <ul class="tl">

@@ -11,6 +11,7 @@ import ContainerText from './files/containerstext';
 import ProgressionBars from './files/progressionBars';
 import Contact from './formulaire/contact_form';
 import Timeline from './files/timeline';
+import Apropos from './files/apropos';
 
 function App() {
   const [champ_projet, setChampProjet] = useState([
@@ -19,7 +20,11 @@ function App() {
     {titre:"ALGOSUP, PROJET", soustitre:"Projet factory display", description:"Réalisation d’un site web d’affichages dynamiques de diverses contenus (textes, widgets et images)"},
   ]);
   const [aPropos, setAPropos] = useState([
-    {titre:"", soustitre:"Mon profil", description:"Étudiante en 2ème année de Bachelor Conception de Données et Application à l'ESTIAM campus Bourges. Je suis à la recherche d'une entreprise pour m'accueillir pour un stage de fin d’année et une alternance en juillet 2025."}, 
+    { titre:"", 
+      soustitre:"Mon profil", 
+      description:"Étudiante en 2ème année de Bachelor Conception de Données et Application à l'ESTIAM campus Bourges. Je suis à la recherche d'une entreprise pour m'accueillir pour un stage de fin d’année et une alternance en juillet 2025.",
+      description2: "description 2"
+    }, 
   ]);
   const [expperience, setExperience] = useState([
     {date: "24 juin - 30 aout 2024", titre:"Paragon ID | Stage de validation de fin d’année", detail:"Gestion de projet et data analyse des bases données "},
@@ -35,7 +40,7 @@ function App() {
   return (
   <>
     <Header />
-    <ContainerText champ={aPropos} titre="A propos de moi" lien="a-propos"/>
+    <Apropos champ={aPropos} titre="A propos de moi" lien="a-propos"/>
 
     <ProgressionBars titre="Technologies que j'étudie" lien="skills"/>
     <Timeline champ={expperience} titre="Mon experiences" lien="mes-experiences" />

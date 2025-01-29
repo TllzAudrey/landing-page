@@ -1,21 +1,13 @@
 import {useState} from 'react';
 import NavBar from './navbar';
-import profil from '../header/audrey.jpg';
-import ImgMail from '../header/mail.png';
-import ImgMap from '../header/map.png';
-import ImgNumero from '../header/numero.png';
+import profil from '../assets/audrey.jpg';
+import ImgMail from '../assets/mail.png';
+import ImgMap from '../assets/map.png';
+import ImgNumero from '../assets/numero.png';
 
 
 export default function Header({description  }) {
-  /*const [champ_navbar, setChampNavbar] = useState([
-    { name: 'A propos', lien: '#a-propos' },
-    { name: 'Compétences', lien: '#skills' },
-    { name: 'projets', lien: '#projects' },
-    { name: 'Mes expériences', lien: '#mes-experiences' },
-    { name: "Mes passe temps", lien:"#passe-temp"},
-    { name: 'Mes formations', lien: '#mes-formations' },    
-    { name: 'Contact', lien: '#contact' },    
-  ]) */
+
   const [champ_navbar, setChampNavbar] = useState([
     { name: 'Compétences', lien: '#skills' },
     { name: 'Mes expériences', lien: '#mes-experiences' },

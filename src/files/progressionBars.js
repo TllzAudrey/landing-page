@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Progression from './progression';
 
-function ProgressionBars({champ, titre,lien}) {
+function ProgressionBars({titre,lien}) {
     const [progressionBar, setProgressionBar] = useState([
         {matiere:"HTML5", perc:70}, 
         {matiere:"CSS3", perc:50}, 

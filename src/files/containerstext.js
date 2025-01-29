@@ -12,8 +12,8 @@ function Containers({champ, titre, soustitre, lien}) {
     const [containers, setContainers] = useState(champ);
     return (
       <>
-        <section id={lien}>
-          <div id="container">
+        <section id="container" >
+          <div id={lien} >
             <h2>{titre}</h2>
             <div id="containers">
               {containers.map((value) => ( 

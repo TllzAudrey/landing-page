@@ -11,6 +11,8 @@ body{
 p{
   text-align: justify;
 }
+
+
 section{
   padding: 10px 0 10px 0;
 }
@@ -63,7 +65,6 @@ section{
   margin:auto;
   padding: 20px 0 20px 0;
   position:relative;
-  margin-bottom: 20px;
   background-color: #820453;
 }
 
@@ -103,8 +104,21 @@ section{
 #apropos{
   background-color: #79747b;
   color: white;
-  padding : 5%;
+  padding: 20px;
 }
+
+#apropos > div >h2 {
+  color: #ffffff;
+  text-align: center;
+}
+
+#apropos-cont {
+  width:60%;
+  margin:auto;
+  position:relative;
+  padding-bottom: 10px;
+}
+
 
 /* Progression Bar css */
 
@@ -179,7 +193,7 @@ progress[value]::-webkit-progress-value {
 
 /* containers + text css*/
 
-#container >h2 {
+#container > div >h2 {
   color: #c2067b;
   text-align: center;
 }
@@ -194,7 +208,10 @@ progress[value]::-webkit-progress-value {
 }
 
 #containers > div{
-  background-color: #79747b;
+  background: url(./assets/estiam.jpg);
+  opacity: 0.3;
+  background-size: 100%;
+
   color: white;
   flex: 50%;
   padding: 15px;
@@ -248,14 +265,17 @@ progress[value]::-webkit-progress-value {
 
 /* Timeline css*/
 
-#container-timeline > h2{
+#container-timeline{
+  background-color: #f1eff1;
+}
+
+#container-timeline > div > h2{
   color: #c2067b;
   text-align: center;
 
 }
 
 .history-tl-container{
-
   width:70%;
   text-align: center;
   margin:auto;
@@ -400,3 +420,5 @@ ul.tl li .timestamp{
     margin-left:15%;
   }
 }
+
+
