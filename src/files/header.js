@@ -11,7 +11,7 @@ export default function Header({description  }) {
   const [champ_navbar, setChampNavbar] = useState([
     { name: 'Compétences', lien: '#skills' },
     { name: 'Mes expériences', lien: '#mes-experiences' },
-    { name: 'projets', lien: '#projects' },
+    { name: 'Projets', lien: '#projects' },
     { name: "Mes passe temps", lien:"#passe-temp"},
     { name: 'Mes formations', lien: '#mes-formations' },    
     { name: 'Contact', lien: '#contact' },    

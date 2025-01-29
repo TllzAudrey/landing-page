@@ -38,8 +38,11 @@ function App() {
     {date: "2022", titre:"Lycée Saint Marie | Bac général", detail:"Spécialités mathématiques et Numérique et Sciences Informatiques"},
   ]);
 
-  const[message1, setMessage1]= useState("J’adore lire des romans, faire de la photographie et voyager.Lire me permet de m’évader dans des histoires captivantes et d’explorer d’autres mondes. C’est une façon de rêver et d’apprendre en même temps.Avec la photographie, j’aime capturer des instants uniques, comme un paysage ou un sourire. Ça me pousse à voir la beauté dans les détails et à garder des souvenirs précieux.Enfin, voyager me permet de découvrir de nouveaux endroits, de rencontrer des gens différents et de vivre des expériences inoubliables. Chaque voyage me fait grandir.Ces passions enrichissent ma vie et me rappellent la beauté du monde.")
+  const[paragraphe1, setParagraphe1]= useState("J’adore lire des romans, faire de la photographie et voyager.Lire me permet de m’évader dans des histoires captivantes et d’explorer d’autres mondes. C’est une façon de rêver et d’apprendre en même temps.")
+  const[paragraphe2, setParagraphe2]= useState("Avec la photographie, j’aime capturer des instants uniques, comme un paysage ou un sourire. Ça me pousse à voir la beauté dans les détails et à garder des souvenirs précieux.Enfin, voyager me permet de découvrir de nouveaux endroits, de rencontrer des gens différents et de vivre des expériences inoubliables. Chaque voyage me fait grandir.Ces passions enrichissent ma vie et me rappellent la beauté du monde.")
   
+  const[para1, setPara1]= useState("Le domaine de l’informatique me passionne, car il combine créativité et résolution de problèmes. Créer des programmes ou développer des solutions me donne un profond sentiment d’accomplissement, surtout en sachant que cela peut faciliter la vie des autres. J’aime aussi l’évolution constante de ce secteur, qui m’encourage à apprendre et à m’adapter aux nouvelles technologies, comme l’intelligence artificielle ou la cybersécurité. L’aspect collaboratif est également stimulant : travailler en équipe pour résoudre des défis est une expérience enrichissante.")
+  const[para2, setPara2]= useState(" Enfin, ce qui me motive le plus, c’est l’impact de l’informatique dans tous les domaines, santé, éducation ou environnement , et la possibilité de contribuer à un monde meilleur grâce à mes compétences.")
   
   return (
   <>
@@ -50,9 +53,8 @@ function App() {
     <Timeline champ={experience} titre="Mon experiences" lien="mes-experiences" />
     <ContainerText champ={champ_projet} titre="Mes projets récents" lien="projects"/>
     
-    <Image_droite titre="Mes passes temps" soustitre="Mes passions" alt="Image d'une personne tenant un livre représentant sa passion pour la lecture"  message={message1} image={lecture} lien="passe-temp" />
-    <Image_gauche titre="Pourquoi l'informatique" soustitre="" message="Le domaine de l’informatique me passionne, car il combine créativité et résolution de problèmes. Créer des programmes ou développer des solutions me donne un profond sentiment d’accomplissement, surtout en sachant que cela peut faciliter la vie des autres. J’aime aussi l’évolution constante de ce secteur, qui m’encourage à apprendre et à m’adapter aux nouvelles technologies, comme l’intelligence artificielle ou la cybersécurité.L’aspect collaboratif est également stimulant : travailler en équipe pour résoudre des défis est une expérience enrichissante. Enfin, ce qui me motive le plus, c’est l’impact de l’informatique dans tous les domaines, santé, éducation ou environnement , et la possibilité de contribuer à un monde meilleur grâce à mes compétences."
-     image={projet} alt="image d'un ordinateur avec des diagrammes afin de représenter la gestion de projet" lien=""/>
+    <Image_droite titre="Mes passes temps" soustitre="Mes passions" alt="Image d'une personne tenant un livre représentant sa passion pour la lecture"  paragraphe1={paragraphe1} paragraphe2={paragraphe2} image={lecture} lien="passe-temp" />
+    <Image_gauche titre="Pourquoi l'informatique" soustitre="" paragraphe1={para1} paragraphe2={para2} image={projet} alt="image d'un ordinateur avec des diagrammes afin de représenter la gestion de projet" lien=""/>
 
     <Timeline champ={formation} titre="Mes formations" lien="mes-formations" />
     <Contact lien="contact" titre_formulaire="Me contacter"/>

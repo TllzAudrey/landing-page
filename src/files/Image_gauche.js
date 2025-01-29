@@ -7,7 +7,8 @@ function image_gauche(props) {
                 <div id="colum-image"> <img src={props.image} className="image-column" alt={props.alt} /></div>
                 <div>
                     <h3 className="soustitre-gauche">{props.soustitre}</h3>
-                    <p className="message-gauche">{props.message}</p>
+                    <p className="message-gauche">{props.paragraphe1}</p>
+                    <p className="message-gauche">{props.paragraphe2}</p>
                 </div>
             </div>
         </section>

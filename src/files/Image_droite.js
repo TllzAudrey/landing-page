@@ -6,7 +6,8 @@ function image_droite(props) {
             <div class="flex-container">
                 <div >
                     <h3 className="soustitre-droite">{props.soustitre}</h3>
-                    <p className="message-droite">{props.message}</p>
+                    <p className="message-droite">{props.paragraphe1}</p>
+                    <p className="message-droite">{props.paragraphe2}</p>
 
                 </div>
                 <div id="colum-image"> <img src={props.image} className="image-column" alt={props.alt} /></div>
