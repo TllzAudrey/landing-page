@@ -12,10 +12,12 @@ import ProgressionBars from './files/progressionBars';
 import Contact from './formulaire/contact_form';
 import Timeline from './files/timeline';
 import Apropos from './files/apropos';
+import Image from './assets/binary.jpg';
+
 
 function App() {
   const [champ_projet, setChampProjet] = useState([
-    {titre:"ESTIAM, PROJET", soustitre:"Réalisation d’un site vitrine", description:"Développement d'un site web via le CMS wordpress, pour le Rotary Bourges Jacques Coeur dans le cadre d’un concours."}, 
+    {titre:"ESTIAM, PROJET", soustitre:"Réalisation d’un site vitrine",description:"Développement d'un site web via le CMS wordpress, pour le Rotary Bourges Jacques Coeur dans le cadre d’un concours."}, 
     {titre:"ESTIAM, HACKATON", soustitre:"Réalisation d’un site d’évènementiel", description:"Mise en place d’un site web via le CMS wordpress, durant 5 jours"},
     {titre:"ALGOSUP, PROJET", soustitre:"Projet factory display", description:"Réalisation d’un site web d’affichages dynamiques de diverses contenus (textes, widgets et images)"},
   ]);
@@ -26,7 +28,7 @@ function App() {
       description2: "description 2"
     }, 
   ]);
-  const [expperience, setExperience] = useState([
+  const [experience, setExperience] = useState([
     {date: "24 juin - 30 aout 2024", titre:"Paragon ID | Stage de validation de fin d’année", detail:"Gestion de projet et data analyse des bases données "},
     {date: "2019", titre:"Centre hospitalier George Sand | Stage de 2nde ", detail:"Ce stage m'a permis de m'assurer sur mon choix d'orientation. "},
   ]);
@@ -43,7 +45,7 @@ function App() {
     <Apropos champ={aPropos} titre="A propos de moi" lien="a-propos"/>
 
     <ProgressionBars titre="Technologies que j'étudie" lien="skills"/>
-    <Timeline champ={expperience} titre="Mon experiences" lien="mes-experiences" />
+    <Timeline champ={experience} titre="Mon experiences" lien="mes-experiences" />
     <ContainerText champ={champ_projet} titre="Mes projets récents" lien="projects"/>
     
     <Image_droite titre="Mes passes temps" soustitre="Mes passions" 
