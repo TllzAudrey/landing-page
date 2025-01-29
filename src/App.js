@@ -2,7 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import './App.css';
 import lecture from './assets/lecture.jpeg';
-import projet from './assets/projet.jpg';
+import projet from './assets/artificial-intelligence.jpg';
 import Header from './files/header';
 import Footer from './files/footer';
 import Image_droite from './files/Image_droite';
@@ -54,7 +54,7 @@ function App() {
     <ContainerText champ={champ_projet} titre="Mes projets récents" lien="projects"/>
     
     <Image_droite titre="Mes passes temps" soustitre="Mes passions" alt="Image d'une personne tenant un livre représentant sa passion pour la lecture"  paragraphe1={paragraphe1} paragraphe2={paragraphe2} image={lecture} lien="passe-temp" />
-    <Image_gauche titre="Pourquoi l'informatique" soustitre="" paragraphe1={para1} paragraphe2={para2} image={projet} alt="image d'un ordinateur avec des diagrammes afin de représenter la gestion de projet" lien=""/>
+    <Image_gauche titre="Pourquoi l'informatique" soustitre="" paragraphe1={para1} paragraphe2={para2} image={projet} alt="image d'un humain avec des neurones afin de représenter l'intelligence artificielle" lien=""/>
 
     <Timeline champ={formation} titre="Mes formations" lien="mes-formations" />
     <Contact lien="contact" titre_formulaire="Me contacter"/>
