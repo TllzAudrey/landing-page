@@ -4,6 +4,7 @@ import React from 'react';
 const ReusableForm = ({ fields, onSubmit, lien,titre_formulaire, action, method}) => {
   const handleSubmit = (event) => {
     event.preventDefault();
+       
     const formData = new FormData(event.target);
     const data = {};
     formData.forEach((value, key) => {

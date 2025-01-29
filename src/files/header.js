@@ -24,17 +24,17 @@ export default function Header({description  }) {
     <header>
       <NavBar champ_navbar = {champ_navbar} />
       <div class="header">
-        <img src={profil} class="profil" alt="photo-profil" />
+        <img src={profil} class="profil" alt="profil picture of a girl" />
 
         <div id="liens">
           <div class="lien">
-            <img src={ImgMail} class="icon" alt="icon" /><p>{mail}</p>
+            <img src={ImgMail} class="icon" alt="Icône d'une lettre représentant le mail de la personne" /><p>{mail}</p>
           </div>
           <div class="lien">
-            <img src={ImgMap} class="icon" alt="icon" /><p>{map}</p>
+            <img src={ImgMap} class="icon" alt="Icône de position représentant la ville ou la personne habite" /><p>{map}</p>
           </div>
           <div class="lien">
-            <img src={ImgNumero} class="icon" alt="icon" /><p>{num}</p>
+            <img src={ImgNumero} class="icon" alt="Icône de téléphone représentant le numéro de télephone de la personne" /><p>{num}</p>
           </div>
         </div>
       </div>

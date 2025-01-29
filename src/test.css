@@ -1,0 +1,28 @@
+.cont-formulaire{
+    background-color: #79747b;
+    color: white;
+  }
+  
+  .cont-formulaire > h1{
+    text-align: center;
+  }
+  
+  #cont-formulaire{
+    width:100%;
+    margin:auto;
+    position:relative;
+    text-align: center;
+  }
+  
+  .Inputs{
+    margin-top: 10px;
+  }
+  
+  .Inputs > label{
+    margin-right: 10px;
+    font-size: larger;
+  }
+  
+  .Inputs > select{
+    font-size: medium;
+  }

@@ -13,7 +13,7 @@ function ProgressionBars({titre,lien}) {
         <section id={lien} >
           <div id="progression_cont">
             <div id="cv"> 
-              <img src='./CV/CV.png' class="image-cv" alt="image" />
+              <img src='./CV/CV.png' class="image-cv" alt="image du cv de la personne" />
               <button class="Documents-btn" onClick={() => window.open('./CV/CV.pdf', '_blank')}>Mon CV</button>
             </div>
             <div id="progbar">

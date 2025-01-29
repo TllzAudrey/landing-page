@@ -181,14 +181,21 @@ progress[value]::-webkit-progress-value {
 }
 
 .Documents-btn{
-  background-color: #820453;
-  color: white;
   padding: 10px;
   margin:0;
   margin-top: 10px;
   text-align: center;
-  border-radius: 10px;
-  border-color: #820453;
+  background-color: #820453; 
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #820453; 
 }
 
 /* containers + text css*/
@@ -335,35 +342,73 @@ ul.tl li .timestamp{
 
 /* Formulaire */
 
-.cont-formulaire{
-  background-color: #79747b;
+#cont-formulaire {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cont-formulaire {
+  margin: 0 auto;
+  background: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #c2067b;
+}
+
+.Inputs {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  width: 99%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #820453;
+  outline: none;
+}
+
+#button > button {
+  background-color: #820453;
   color: white;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.cont-formulaire > h1{
-  text-align: center;
+#button > button:hover {
+  background-color: #820453;
 }
 
-#cont-formulaire{
-  width:100%;
-  margin:auto;
-  position:relative;
-  text-align: center;
+#button > button:active {
+  transform: scale(0.98);
 }
-
-.Inputs{
-  margin-top: 10px;
-}
-
-.Inputs > label{
-  margin-right: 10px;
-  font-size: larger;
-}
-
-.Inputs > select{
-  font-size: medium;
-}
-
 
 /* Footer css*/
 

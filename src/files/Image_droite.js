@@ -9,7 +9,7 @@ function image_droite(props) {
                     <p className="message-droite">{props.message}</p>
 
                 </div>
-                <div id="colum-image"> <img src={props.image} className="image-column" alt="image" /></div>
+                <div id="colum-image"> <img src={props.image} className="image-column" alt={props.alt} /></div>
             </div>
         </section>
 
