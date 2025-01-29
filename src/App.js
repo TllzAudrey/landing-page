@@ -17,9 +17,9 @@ import Image from './assets/binary.jpg';
 
 function App() {
   const [champ_projet, setChampProjet] = useState([
-    {titre:"ESTIAM, PROJET", soustitre:"Réalisation d’un site vitrine",description:"Développement d'un site web via le CMS wordpress, pour le Rotary Bourges Jacques Coeur dans le cadre d’un concours."}, 
-    {titre:"ESTIAM, HACKATON", soustitre:"Réalisation d’un site d’évènementiel", description:"Mise en place d’un site web via le CMS wordpress, durant 5 jours"},
-    {titre:"ALGOSUP, PROJET", soustitre:"Projet factory display", description:"Réalisation d’un site web d’affichages dynamiques de diverses contenus (textes, widgets et images)"},
+    {titre:"ESTIAM, PROJET", lien:"estiam" , soustitre:"Réalisation d’un site vitrine",description:"Développement d'un site web via le CMS wordpress, pour le Rotary Bourges Jacques Coeur dans le cadre d’un concours."}, 
+    {titre:"ESTIAM, HACKATON", lien:"estiam" ,soustitre:"Réalisation d’un site d’évènementiel", description:"Mise en place d’un site web via le CMS wordpress, durant 5 jours"},
+    {titre:"ALGOSUP, PROJET", lien:"autres" ,soustitre:"Projet factory display", description:"Réalisation d’un site web d’affichages dynamiques de diverses contenus (textes, widgets et images)"},
   ]);
   const [aPropos, setAPropos] = useState([
     { titre:"", 
